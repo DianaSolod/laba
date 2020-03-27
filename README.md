@@ -1,1 +1,1 @@
-# laba
+# python labs
