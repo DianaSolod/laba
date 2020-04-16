@@ -10,13 +10,16 @@ def check(a):
             print("Number " + str(b) + " is NOT a power of 2")
 
 #запуск функции и взаимодействие с пользователем
-a = 1
-while(a != 'e'):
-    a = input('Введите число (e to exit): ')
-    if a.isnumeric():
-        check(int(a))
-    elif a == 'e':
-        continue
-    else:
-        print("Wrong input")
+def main():
+    a = 1
+    while(a != 'e'):
+        a = input('Введите число (e to exit): ')
+        if a.isnumeric():
+            check(int(a))
+        elif a == 'e':
+            continue
+        else:
+            print("Wrong input")
 
+if __name__ == "__main__":
+    main()
