@@ -4,13 +4,16 @@ def leon(n):
     return leon(n - 1) + leon(n - 2) + 1
 
 #запуск функции и взаимодействие с пользователем
-a = 1
-while(a != 'e'):
-    a = input('Введите номер числа леонардо (e to exit): ')
-    if a.isnumeric():
-        print(a,'число Леонардо: ',leon(int(a)))
-    elif a == 'e':
-        continue
-    else:
-        print("Wrong input")
+def main():
+    a = 1
+    while(a != 'e'):
+        a = input('Введите номер числа леонардо (e to exit): ')
+        if a.isnumeric():
+            print(a,'число Леонардо: ',leon(int(a)))
+        elif a == 'e':
+            continue
+        else:
+            print("Wrong input")
 
+if __name__ == "__main__":
+    main()
