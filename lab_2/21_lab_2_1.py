@@ -40,13 +40,17 @@ def dec(L):
 
 
 #запуск функции и взаимодействие с пользователем
-a = 1
-while(a != 'c'):
-    a = input('Type a to load a file or b to enter array (c to exit): ')
-    if a == 'a' or a == 'b':
-        B = arr(a)
-        dec(B)
-    elif a == 'c':
-        continue
-    else:
-        print("Wrong input")
+def main():
+    a = 1
+    while(a != 'c'):
+        a = input('Type a to load a file or b to enter array (c to exit): ')
+        if a == 'a' or a == 'b':
+            B = arr(a)
+            dec(B)
+        elif a == 'c':
+            continue
+        else:
+            print("Wrong input")
+           
+if __name__ == "__main__":
+    main()        
