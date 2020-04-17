@@ -47,7 +47,7 @@ def main():
         if a == 'a' or a == 'b':
             B = arr(a)
             dec(B)
-        elif a == 'c':
+        elif a == 'e':
             continue
         else:
             print("Wrong input")
