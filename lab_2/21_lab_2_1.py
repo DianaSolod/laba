@@ -42,8 +42,8 @@ def dec(L):
 #запуск функции и взаимодействие с пользователем
 def main():
     a = 1
-    while(a != 'c'):
-        a = input('Type a to load a file or b to enter array (c to exit): ')
+    while(a != 'e'):
+        a = input('Type a to load a file or b to enter array (e to exit): ')
         if a == 'a' or a == 'b':
             B = arr(a)
             dec(B)
