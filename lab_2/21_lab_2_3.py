@@ -49,8 +49,10 @@ def main():
     for i in range(len(a)):
         b+=" ".join(a[i])
         b+='\n'
-    for i in range(len(b)):
-        show_progress_bar(50,i,len(b))
+    f=" "
+    while len(f) < len(b):
+        f+=" ".join(a[i])
+        show_progress_bar(50,len(f),len(b))
     l = open("file.txt", 'w+')
     l.write(b)
     l.close()
