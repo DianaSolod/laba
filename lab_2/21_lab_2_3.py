@@ -54,7 +54,6 @@ def main():
     l = open("file.txt", 'w+')
     l.write(b)
     l.close()
-    print(b)
 
 if __name__ == "__main__":
     main()
